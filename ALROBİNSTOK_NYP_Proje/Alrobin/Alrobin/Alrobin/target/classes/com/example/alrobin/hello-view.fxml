@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alrobin.Controller">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="47.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="kayitol_pane" layoutY="-6.0" prefHeight="412.0" prefWidth="606.0" style="-fx-background-color: #002629;">
+               <children>
+                  <ImageView fitHeight="426.0" fitWidth="615.0" layoutY="-1.0" pickOnBounds="true" rotate="180.0">
+                     <image>
+                        <Image url="@../../../goldenss.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="60.0" layoutX="9.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../usericon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="GOLD" layoutX="75.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı:" wrappingWidth="144.7886352539062">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <TextField fx:id="kayitol_kullaniciadi_txtfield" layoutX="76.0" layoutY="161.0" prefHeight="32.0" prefWidth="232.0" promptText="kullanıcı adı" />
+                  <PasswordField fx:id="kayitol_parola_passwordfield" layoutX="76.0" layoutY="233.0" prefHeight="32.0" prefWidth="232.0" promptText="parola" />
+                  <Button fx:id="kayitol_kayitol_btn" layoutX="71.0" layoutY="274.0" mnemonicParsing="false" onAction="#kayitol_kayitol_btn" prefHeight="47.0" prefWidth="108.0" text="Kayıt Ol" />
+                  <Text fill="GOLD" layoutX="76.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola:" wrappingWidth="71.28515625">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="GOLD" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kayıt Ol" wrappingWidth="183.9886474609375">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="38.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <Text fill="GOLD" layoutX="76.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İsim" wrappingWidth="71.28515625">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="24.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+                  <TextField fx:id="kayitol_isim_txtfield" layoutX="76.0" layoutY="96.0" prefHeight="25.0" prefWidth="232.0" promptText="isim">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="geri" layoutX="205.0" layoutY="283.0" mnemonicParsing="false" onAction="#geributton" prefHeight="30.0" prefWidth="60.0" text="Geri" />
+                  <CheckBox fx:id="çalışancheckbox" layoutX="75.0" layoutY="327.0" mnemonicParsing="false" onAction="#çalışancheckbox" text="Çalışan" textFill="GOLD">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></CheckBox>
+                  <CheckBox fx:id="müştericheckbox" layoutX="174.0" layoutY="327.0" mnemonicParsing="false" onAction="#müştericheckbox" text="Müşteri" textFill="GOLD">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></CheckBox>
+                  <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="9.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../download.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="52.0" layoutX="9.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../name.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="girişekranı" prefHeight="412.0" prefWidth="606.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="412.0" fitWidth="606.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../giriş.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="stokbutton" layoutX="187.0" layoutY="175.0" mnemonicParsing="false" onAction="#stokbutton" prefHeight="98.0" prefWidth="232.0" rotate="39.6" style="-fx-background-color: gold;" text="STOK">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="satısbutton" layoutX="261.0" layoutY="84.0" mnemonicParsing="false" onAction="#satısbutton" prefHeight="101.0" prefWidth="232.0" rotate="39.6" style="-fx-background-color: gold;" text="SATIŞ">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+                  <Button fx:id="girisekranıgeri_btn" layoutX="48.0" layoutY="283.0" mnemonicParsing="false" onAction="#girisekranıgeri_btn" prefHeight="32.0" prefWidth="52.0" style="-fx-background-color: gold;" text="GERİ">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect></Button>
+               </children>
+            </Pane>
+            <Pane fx:id="stokpane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="412.0" fitWidth="615.0" layoutX="-3.0" layoutY="-4.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../backgrounds.jpg" />
+                     </image>
+                     <effect>
+                        <MotionBlur />
+                     </effect>
+                  </ImageView>
+                  <Text layoutX="246.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOK" textAlignment="CENTER">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="tablo" layoutX="14.0" layoutY="43.0" prefHeight="243.0" prefWidth="431.0" style="-fx-background-color: grey;">
+                    <columns>
+                        <TableColumn fx:id="tablomodelisim" prefWidth="112.00002479553223" text="MODEL İSİM" />
+                      <TableColumn fx:id="tablofiyat" prefWidth="103.199951171875" text="FİYAT" />
+                      <TableColumn fx:id="tablomiktar" prefWidth="96.0" text="MİKTAR" />
+                        <TableColumn fx:id="tablorenk" prefWidth="120.7999267578125" text="RENK" />
+                    </columns>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </TableView>
+                  <Button fx:id="stokeklebutton" layoutX="471.0" layoutY="111.0" mnemonicParsing="false" onAction="#stokeklebutton" prefHeight="25.0" prefWidth="108.0" text="Stok Ekle">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="modelisimtext" layoutX="14.0" layoutY="316.0" prefHeight="25.0" prefWidth="108.0" promptText="model isim" />
+                  <TextField fx:id="fiyattext" layoutX="173.0" layoutY="316.0" prefHeight="25.0" prefWidth="108.0" promptText="fiyat" />
+                  <TextField fx:id="miktartext" layoutX="322.0" layoutY="316.0" prefHeight="25.0" prefWidth="108.0" promptText="miktar" />
+                  <TextField fx:id="renktext" layoutX="465.0" layoutY="316.0" prefHeight="25.0" prefWidth="114.0" promptText="renk" />
+                  <Button fx:id="silbutton" layoutX="471.0" layoutY="45.0" mnemonicParsing="false" onAction="#silbutton" prefHeight="30.0" prefWidth="108.0" text="SİL">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="satınalbutton" layoutX="475.0" layoutY="255.0" mnemonicParsing="false" onAction="#satınalbutton" prefHeight="30.0" prefWidth="108.0" text="Satın Al">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="16.0" />
+                     </font></Button>
+                  <TextField fx:id="miktarsatınal" layoutX="173.0" layoutY="357.0" prefHeight="25.0" prefWidth="108.0" promptText="miktar" />
+                  <Label fx:id="toplamlabel" layoutX="321.0" layoutY="358.0" prefHeight="25.0" prefWidth="145.0" text="TOPLAM = 0$" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="hesapla" layoutX="475.0" layoutY="187.0" mnemonicParsing="false" onAction="#hesaplabutton" prefHeight="30.0" prefWidth="108.0" text="HESAPLA">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="stokgeri_btn" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" onAction="#stokgeri_btn" prefHeight="25.0" prefWidth="62.0" text="GERİ!" />
+               </children>
+            </Pane>
+            <Pane fx:id="satışpane" prefHeight="356.0" prefWidth="592.0">
+               <children>
+                  <TableView fx:id="tablo2" prefHeight="357.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="tablo2isim" prefWidth="120.0" text="İSİM" />
+                      <TableColumn fx:id="tablo2modelisim" prefWidth="120.0" text="MODELİSİM" />
+                        <TableColumn fx:id="tablo2fiyat" prefWidth="120.0" text="FİYAT" />
+                        <TableColumn fx:id="tablo2miktar" prefWidth="120.0" text="MİKTAR" />
+                        <TableColumn fx:id="tablo2renk" prefWidth="120.0" text="renk" />
+                    </columns>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </TableView>
+                  <Button fx:id="satısgeri_btn" layoutX="8.0" layoutY="357.0" mnemonicParsing="false" onAction="#satısgeri_btn" text="GERİ" />
+               </children>
+            </Pane>
+            <Pane fx:id="kartpane" prefHeight="406.0" prefWidth="610.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="ödemeisim" layoutX="107.0" layoutY="93.0" prefHeight="25.0" prefWidth="295.0" promptText="İSİM" />
+                  <TextField fx:id="ödemekartnumarası" layoutX="107.0" layoutY="149.0" prefHeight="25.0" prefWidth="295.0" promptText="KART NUMARASI" />
+                  <TextField fx:id="ödemeay" layoutX="107.0" layoutY="203.0" prefHeight="25.0" prefWidth="138.0" promptText="AY" />
+                  <TextField fx:id="ödemecvv" layoutX="107.0" layoutY="258.0" prefHeight="25.0" prefWidth="295.0" promptText="CVV NUMARASI" />
+                  <Text fill="GOLD" layoutX="166.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ÖDEME SAYFASI" wrappingWidth="138.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="onaylabutton" layoutX="222.0" layoutY="312.0" mnemonicParsing="false" onAction="#onaylabutton" prefHeight="32.0" prefWidth="71.0" text="ONAYLA" />
+                  <Text fill="GOLD" layoutX="107.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="İSİM:" wrappingWidth="71.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="GOLD" layoutX="108.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KART NUMARASI:" wrappingWidth="138.13671875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="GOLD" layoutX="107.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SON KULLANMA TARİHİ:" wrappingWidth="176.20001220703114">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="ödemeyıl" layoutX="255.0" layoutY="203.0" promptText="YIL" />
+                  <Text fill="GOLD" layoutX="107.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV NUMARASI:" wrappingWidth="138.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="gerikard" layoutX="107.0" layoutY="316.0" mnemonicParsing="false" onAction="#gerikard" text="GERİ" />
+               </children>
+            </Pane>
+            <Pane fx:id="girisyap_pane" layoutX="-6.0" prefHeight="406.0" prefWidth="615.0" style="-fx-background-color: #002629;">
+               <children>
+                  <Text fill="GOLD" layoutX="17.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kullanıcı Adı:" wrappingWidth="166.93670654296875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="girisyap_kullaniciadi_txtfield" layoutX="17.0" layoutY="115.0" prefHeight="25.0" prefWidth="232.0" promptText="kullanıcı adı" />
+                  <PasswordField fx:id="girisyap_parola_passwordfield" layoutX="17.0" layoutY="188.0" prefHeight="25.0" prefWidth="232.0" promptText="parola" />
+                  <Button fx:id="girisyap_girisyap_btn" layoutX="141.0" layoutY="249.0" mnemonicParsing="false" onAction="#girisyap_girisyap_btn" prefHeight="47.0" prefWidth="108.0" text="Giriş Yap" />
+                  <Button fx:id="giriş_kayitol_btn" layoutX="17.0" layoutY="249.0" mnemonicParsing="false" onAction="#giriş_kayitol_btn" prefHeight="47.0" prefWidth="108.0" text="Kayıt Ol" />
+                  <Text fill="GOLD" layoutX="17.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="GOLD" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giriş Yap:" wrappingWidth="159.98858642578125">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Text>
+                  <ButtonBar layoutX="184.0" layoutY="58.0" prefHeight="40.0" prefWidth="200.0" />
+                  <ImageView fitHeight="412.0" fitWidth="352.0" layoutX="258.0" layoutY="-12.0" opacity="0.84" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../resim9.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="26.0" prefWidth="600.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="-4.0" prefHeight="47.0" prefWidth="606.0" style="-fx-background-color: #252320;" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="24.0">
+               <children>
+                  <Text fill="GOLD" layoutX="160.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALROBİN TEKSTİL">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="36.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow>
+                                 <input>
+                                    <Bloom />
+                                 </input>
+                              </Shadow>
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

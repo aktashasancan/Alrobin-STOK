@@ -1,0 +1,14 @@
+Mehmet Bayanelbise 7 50 beyaz
+Mehmet Bayanelbise 7 50 mavi
+Mehmet Bayanelbise 7 50 siyah
+Mehmet Bayanelbise 7 50 hardal
+Mehmet Bayangömlek 5 500 beyaz
+Mehmet Bayangömlek 5 500 siyah
+emre Bayangömlek 5 1000 mavi
+emre Bayangömlek 5 1000 hardal
+emre Bayanelbise 7 100 hardal
+emre Bayanelbise 7 100 siyah
+emre Bayanelbise 7 100 mavi
+emre Bayanelbise 7 100 beyaz
+emre Bayanelbise 7 50 beyaz
+özkan Bayanelbise 7 50 hardal
